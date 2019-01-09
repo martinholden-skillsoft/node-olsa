@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2026
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "node-olsa", "node-olsa\node-olsa.njsproj", "{7FF0408D-8ADD-42CD-AFF4-BEAD20990B01}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7FF0408D-8ADD-42CD-AFF4-BEAD20990B01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7FF0408D-8ADD-42CD-AFF4-BEAD20990B01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7FF0408D-8ADD-42CD-AFF4-BEAD20990B01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7FF0408D-8ADD-42CD-AFF4-BEAD20990B01}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D359D220-9E72-4E04-AE3E-E228B0292E7F}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,16 @@
+{
+  "name": "node-olsa",
+  "version": "0.1.0",
+  "description": "Call OLSA Web Services from Node",
+  "main": "app.js",
+  "author": {
+    "name": "MNHolden"
+  },
+  "dependencies": {
+    "global-tunnel-ng": "^2.7.1",
+    "got": "^9.5.0",
+    "lodash": "^4.17.11",
+    "soap": "git://github.com/martinholden-skillsoft/node-soap.git"
+  },
+  "devDependencies": {}
+}
