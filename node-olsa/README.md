@@ -7,8 +7,11 @@ To run:
 Set Environment variables (example below for Windows)
 
 set endpoint=aeeval8.skillwsa.com
+
 set customerid=THISISSECRET
+
 set sharedsecret=THSISSECRET
+
 set customer=default
 
 node app
