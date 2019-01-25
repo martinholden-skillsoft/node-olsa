@@ -7,10 +7,19 @@
     "name": "MNHolden"
   },
   "dependencies": {
+    "adm-zip": "^0.4.13",
+    "archiver": "^3.0.0",
+    "axios": "^0.18.0",
+    "crypto-js": "^3.1.9-1",
+    "cwait": "^1.1.2",
     "global-tunnel-ng": "^2.7.1",
-    "got": "^9.5.0",
     "lodash": "^4.17.11",
-    "soap": "git://github.com/martinholden-skillsoft/node-soap.git"
+    "moment": "^2.24.0",
+    "papaparse": "^4.6.3",
+    "promise-retry": "^1.1.1",
+    "sharp": "^0.21.3",
+    "soap": "git://github.com/martinholden-skillsoft/node-soap.git",
+    "winston": "^3.1.0"
   },
   "devDependencies": {}
 }

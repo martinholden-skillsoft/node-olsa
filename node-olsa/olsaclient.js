@@ -52,6 +52,35 @@ OlsaClient.prototype.AI_GetMultipleAssetMetaData = function (assetIds, format) {
     return p;
 };
 
+OlsaClient.prototype.AI_PollForAssetMetaData = function (handle) {
+    var self = this;
+
+    var p = new Promise(function (resolve, reject) {
+        localClient = new soap.createClient(self.wsdl, function (err, client) {
+            if (err) {
+                reject(err);
+            } else {
+
+                var args = {
+                    customerId: self.customerid,
+                    handle:handle
+                };
+
+                client.setSecurity(self.wsse);
+
+                client.AI_PollForAssetMetaData(args, function (err, result, rawResponse, soapHeader, rawRequest) {
+                    if (err) {
+                        reject(err);
+                    } else {
+                        resolve(result);
+                    }
+                });
+            }
+        });
+    });
+    return p;
+};
+
 OlsaClient.prototype.SL_FederatedSearch = function (phrase, username, languagecode) {
     var self = this;
 
