@@ -23,8 +23,8 @@ config.debug.logFile = `app_${config.startTimestamp}.log`;
 //Concurrency
 //Maximum number of images to download at a time
 config.maxImageDownloads = 6;
-//Maximum number of images to resize at a time
-config.maxImageResize = 6;
+//Maximum number of zips at a time
+config.maxZips = 6;
 
 //Site
 config.site = {};
@@ -35,14 +35,17 @@ config.site.customerid = null;
 //Secret
 config.site.sharedsecret = null;
 
+//Inputs
+config.inputs = {};
+//CSV file containing the assetids
+config.inputs.fileName = 'assets.csv';
+//Format for the AI metadata
+config.inputs.metadataFormat = 'AICC';
+
 //Thumbnail retrieval and storage
 config.thumbnails = {};
 //Download thumbnails
 config.thumbnails.enabled = true;
-//JSONAta file that has the transform to identify the thumbnails for downloading
-config.thumbnails.fileExpr = './templates/defaultImages.jsonata';
-//JSONAta string that has the transform to identify the thumbnails for downloading
-config.thumbnails.stringExpr = null;
 //Folder to cache thumbnails in - thumbnails are saved with a filename based on the SHA256 hash of the URL used to download it.
 config.thumbnails.cachefolder = '../thumbnails';
 //Always download thumbnails and do not use cache
@@ -55,8 +58,6 @@ config.downloads.path = '../results/output';
 //File stub
 config.downloads.fileNameStub = 'aimetatadata';
 
-
-
 //Output
 config.output = {};
 //Path to save transformed data
@@ -67,6 +68,8 @@ config.output.fileName = 'output.csv';
 config.output.zipfileName = 'output.zip';
 //ZIP the transformed metadata and thumbnail images if used.
 config.output.zip = true;
+//Number of files to include in each chunk
+config.output.chunkSize = 100;
 
 //Formatting options for the flat file exported using papaparse
 //See https://github.com/mholt/PapaParse
